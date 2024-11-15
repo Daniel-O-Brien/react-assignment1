@@ -7,7 +7,7 @@ import AddToWatchlistIcon from '../components/cardIcons/addToWatchlist'
 
 const TrendingMoviesPage = (props) => {
 
-    const {  data, error, isLoading, isError }  = useQuery('upcoming', getTrending)
+    const {  data, error, isLoading, isError }  = useQuery('trending', getTrending)
 
     if (isLoading) {
         return <Spinner />
