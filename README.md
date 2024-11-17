@@ -24,9 +24,10 @@ Name: Daniel O'Brien
 [ List the __additional__ TMDB endpoints used, giving the description and pathname for each one.]
 
 e.g.
-+ Discover list of movies - discover/movie
-+ Movie details - movie/:id
-+ Movie genres = /genre/movie/list
+
++ Trending Movies - movies/trending
++ Top Rated Movies - movies/toprated
++ 
 
 ## Routing.
 
