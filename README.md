@@ -4,20 +4,21 @@ Name: Daniel O'Brien
 
 ## Overview.
 
-[A brief statement on the content of this repository.]
+A ReactJS app for 
 
 ### Features.
 [ A bullet-point list of the __new features__ you added to the Movies Fan app (and any modifications to existing features) .]
 
-+ Feature 1
-+ Feature 2
-+ Feature 3
-+ etc
-+ etc
++ Trending Movies
++ Top Rated Movies
++ View Recommendations
++ Add Movie to Watchlist
++ Caching for all endpoints
 
 ## Setup requirements.
 
-[ Outline any non-standard setup steps necessary to run your app locally after cloning the repo.]
+npm install
+npm start
 
 ## API endpoints.
 
@@ -27,21 +28,4 @@ e.g.
 
 + Trending Movies - movies/trending
 + Top Rated Movies - movies/toprated
-+ 
-
-## Routing.
-
-[ List the __new routes__ supported by your app and state the associated page.]
-
-+ /blogs - displays all published blogs.
-+ /blogs/:id - displays a particular blog.
-+ /blogs/:id/comments - detail view of a particular blog and its comments.
-+ etc.
-
-[If relevant, state what aspects of your app are protected (i.e. require authentication) and what is public.]
-
-## Independent learning (If relevant).
-
-Itemize the technologies/techniques you researched independently and adopted in your project,
-i.e. aspects not covered in the lectures/labs. Include the source code filenames that illustrate these
-(we do not require code excerpts) and provide references to the online resources that helped you (articles/blogs).
++ watchlist       - movies/watchlist
