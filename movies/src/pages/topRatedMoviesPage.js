@@ -4,6 +4,7 @@ import PageTemplate from '../components/templateMovieListPage';
 import { useQuery } from 'react-query';
 import Spinner from '../components/spinner';
 import AddToWatchlistIcon from '../components/cardIcons/addToWatchlist'
+import AddToFavoritesIcon from "../components/cardIcons/addToFavorites";
 
 const TopRatedMoviesPage = (props) => {
 
@@ -29,7 +30,12 @@ const TopRatedMoviesPage = (props) => {
             title="Top Rated Movies"
             movies={movies}
             action={(movie) => {
-                return <AddToWatchlistIcon movie={movie} />
+                return (
+                    <>
+                        <AddToFavoritesIcon movie={movie} />
+                        <AddToWatchlistIcon movie={movie} />
+                    </>
+                )
             }}
         />
     );
