@@ -4,7 +4,7 @@ Name: Daniel O'Brien
 
 ## Overview.
 
-A ReactJS app for 
+A ReactJS app for displaying moves from TMDB using its API
 
 ### Features.
 [ A bullet-point list of the __new features__ you added to the Movies Fan app (and any modifications to existing features) .]
