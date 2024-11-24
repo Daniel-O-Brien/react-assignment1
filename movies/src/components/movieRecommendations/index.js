@@ -33,7 +33,7 @@ export default function MovieRecommendations({ movie }) {
             <Table sx={{minWidth: 550}} aria-label="recommendations table">
                 <TableHead>
                     <TableRow>
-                        <TableCell >Author</TableCell>
+                        <TableCell >Title</TableCell>
                         <TableCell align="center">Excerpt</TableCell>
                         <TableCell align="right">More</TableCell>
                     </TableRow>
@@ -44,7 +44,7 @@ export default function MovieRecommendations({ movie }) {
                             <TableCell component="th" scope="row">
                                 {r.title}
                             </TableCell>
-                            <TableCell >{excerpt(r.content)}</TableCell>
+                            <TableCell >{excerpt(r.overview)}</TableCell>
                             <TableCell >
                                 <Link
                                     to={`/movies/${r.id}`}

@@ -33,7 +33,7 @@ export default function MovieReviews({ movie }) {
             <Table sx={{minWidth: 550}} aria-label="reviews table">
                 <TableHead>
                     <TableRow>
-                        <TableCell >Title</TableCell>
+                        <TableCell >Author</TableCell>
                         <TableCell align="center">Excerpt</TableCell>
                         <TableCell align="right">More</TableCell>
                     </TableRow>
