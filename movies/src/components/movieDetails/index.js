@@ -9,6 +9,7 @@ import Typography from "@mui/material/Typography";
 import React, { useState } from "react";
 import Drawer from "@mui/material/Drawer";
 import MovieReviews from "../movieReviews"
+import MovieRecommendations from "../movieRecommendations";
 
 const root = {
     display: "flex",
@@ -21,7 +22,8 @@ const root = {
 const chip = { margin: 0.5 };
 
 const MovieDetails = ({ movie }) => {  // Don't miss this!
-    const [drawerOpen, setDrawerOpen] = useState(false);
+    const [reviewDrawerOpen, setReviewDrawerOpen] = useState(false);
+    const [recommendationDrawerOpen, setRecommendationDrawerOpen] = useState(false);
 
     return (
         <>
@@ -74,7 +76,7 @@ const MovieDetails = ({ movie }) => {  // Don't miss this!
             <Fab
                 color="secondary"
                 variant="extended"
-                onClick={() =>setDrawerOpen(true)}
+                onClick={() =>setReviewDrawerOpen(true)}
                 sx={{
                     position: 'fixed',
                     bottom: '1em',
@@ -84,8 +86,24 @@ const MovieDetails = ({ movie }) => {  // Don't miss this!
                 <NavigationIcon />
                 Reviews
             </Fab>
-            <Drawer anchor="top" open={drawerOpen} onClose={() => setDrawerOpen(false)}>
+            <Fab
+                color="secondary"
+                variant="extended"
+                onClick={() =>setRecommendationDrawerOpen(true)}
+                sx={{
+                    position: 'fixed',
+                    bottom: '1em',
+                    right: '10em'
+                }}
+            >
+                <NavigationIcon />
+                Recommendations
+            </Fab>
+            <Drawer anchor="top" open={reviewDrawerOpen} onClose={() => setReviewDrawerOpen(false)}>
                 <MovieReviews movie={movie} />
+            </Drawer>
+            <Drawer anchor="top" open={recommendationDrawerOpen} onClose={() => setRecommendationDrawerOpen(false)}>
+                <MovieRecommendations movie={movie} />
             </Drawer>
         </>
     );
